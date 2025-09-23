@@ -31,4 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
-.json/
+
+# Ignore Atom editor cache
+.atom/
