@@ -1,8 +1,10 @@
-package com.example.demo.service;
+package com.growthhungry.demo.service;
 
-import com.example.demo.model.User;
-import com.example.demo.repository.UserRepository;
 import org.springframework.stereotype.Service;
+
+import com.growthhungry.demo.model.User;
+import com.growthhungry.demo.repository.UserRepository;
+
 import java.util.List;
 
 @Service

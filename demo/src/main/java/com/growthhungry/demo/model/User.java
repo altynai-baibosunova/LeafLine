@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.growthhungry.demo.model;
 
 import jakarta.persistence.*; // For JPA annotations
 import lombok.Getter;

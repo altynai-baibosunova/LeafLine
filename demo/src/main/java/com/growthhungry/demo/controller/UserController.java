@@ -1,8 +1,10 @@
-package com.example.demo.controller;
+package com.growthhungry.demo.controller;
 
-import com.example.demo.model.User;
-import com.example.demo.service.UserService;
 import org.springframework.web.bind.annotation.*;
+
+import com.growthhungry.demo.model.User;
+import com.growthhungry.demo.service.UserService;
+
 import java.util.List;
 
 @RestController

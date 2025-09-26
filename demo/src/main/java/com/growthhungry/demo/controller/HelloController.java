@@ -1,3 +1,4 @@
+package com.growthhungry.demo.controller;
 // package com.example.demo.controller;
 
 // import org.springframework.web.bind.annotation.GetMapping;
