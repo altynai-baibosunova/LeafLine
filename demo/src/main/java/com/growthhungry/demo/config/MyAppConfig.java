@@ -25,6 +25,6 @@ public class MyAppConfig {
     @Bean
     public PasswordEncoder passwordEncoder() {
         // Default strength = 10, you can adjust (e.g. new BCryptPasswordEncoder(12))
-        return new BCryptPasswordEncoder();
+        return new BCryptPasswordEncoder(12);
     }
 }
