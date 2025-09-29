@@ -43,6 +43,19 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.3.30</version>
+</dependency>
+
+
+<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-crypto</artifactId>
+    <version>6.2.1</version>
+</dependency>
+
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
