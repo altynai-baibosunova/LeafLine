@@ -22,8 +22,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User registerUser(User user) {
-        // Hash password before saving
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        return userRepository.save(user);
+    }
+
+        @Override
+    public User saveUser(User user) {
         return userRepository.save(user);
     }
 
@@ -32,15 +36,9 @@ public class UserServiceImpl implements UserService {
         return userRepository.findAll();
     }
 
-    @Override
-    public User saveUser(User user) {
-        return userRepository.save(user);
+    // Optional login verification
+    public boolean verifyPassword(String rawPassword, String hashedPassword) {
+        return passwordEncoder.matches(rawPassword, hashedPassword);
     }
 
-    // Optional: Add password verification here if doing manual login
-    public boolean verifyPassword(String rawPassword, String encodedPassword) {
-        return passwordEncoder.matches(rawPassword, encodedPassword);
-
-        
-    }
 }
